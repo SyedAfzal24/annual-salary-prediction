@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style2.css')}}">
+    <title>Doctor Salary Prediction</title>
+</head>
+<body>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00bcd4;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.title {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.form-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+.form-container button:hover {
+    background-color: #0097a7;
+}
+</style>
+    <header> 
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('about')}}">about</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+    <div id="form-container">
+        <h2>Doctor Salary Prediction</h2>
+        <form id="prediction-form" action="/result" method="POST">
+            <label for="speciality">Speciality:</label>
+            <input type="text" id="speciality" name="speciality" required><br>
+
+            <label for="fairly-compensated">Feel Fairly Compensated:</label>
+            <input type="text" id="fairly-compensated" name="fairly_compensated" required><br>
+            <label for="overall-satisfaction">Overall Satisfaction:</label>
+            <input type="text" id="overall-satisfaction" name="overall_satisfaction" required><br>
+            <label for="satisfied-income">Satisfied Income:</label>
+            <input type="text" id="satisfied-income" name="satisfied_income" required><br>
+            <label for="choose-medicine-again">Would choose Medicine Again:</label>
+            <input type="text" id="choose-medicine-again" name="choose_medicine_again" required><br>
+            <label for="choose-same-speciality">Would choose the Same Speciality:</label>
+            <input type="text" id="choose-same-speciality" name="choose_same_speciality" required><br>
+            <label for="survey-respondents">Survey Respondents by Speciality:</label>
+            <input type="text" id="survey-respondents" name="survey_respondents" required><br>
+            
+            <button>submit</button>
+        </form>
+    </div>
+</body>
+</html>

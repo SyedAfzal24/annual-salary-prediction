@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicted Salary</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            background-image: url('../image/doctor1.jpg');
+            background-size: cover;
+            overflow: hidden;
+        
+        }
+        .header {
+            background-color: #00AEEF;
+            color: white;
+            padding: 10px 0;
+        }
+        .header img {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        .header h1 {
+            display: inline;
+            font-size: 24px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .salary {
+            font-size: 48px;
+            color: #333;
+        }
+        .image-container {
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: 10px;
+            border-radius: 10%;
+        }
+    </style> 
+    <div class="header">
+        <h1> medivoca </h1>
+    </div>
+    <div class="content">
+        <div class="predicted-salary">
+       <p><h2>The Predicted Salary of a Doctor is:{{predict}}</h2></p>
+        </div>
+    </div>
+    <div class="useful-links">
+        <h4>Useful Links</h4>
+        <li><a href="{{ url_for('home')}}">Home</a></li>
+    </div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medinova</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #00aaff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .section img {
+            max-width: 300px;
+            border-radius: 5px;
+        }
+        .section-content {
+            flex: 1;
+            padding-left: 20px;
+        }
+        .section-content h2 {
+            color: #00aaff;
+            margin: 10px 0;
+        }
+        .section-content .features {
+            display: flex;
+            gap: 20px;
+        }
+        .feature {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .feature img {
+            max-width: 50px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #00aaff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MEDINOVA</h1>
+</header>
+
+<nav>
+    <a href="{{ url_for('home')}}">Home</a>
+    <a href="#">About</a>
+    <a href="{{ url_for('Service')}}">Service</a>
+</nav>
+
+<div class="container">
+    <div class="section">
+        <img src="../images/surgery.jpeg" alt="Surgery">
+        <div class="section-content">
+            <h2>ABOUT US</h2>
+            <h1>Best Medical Care For Yourself and Your Family</h1>
+            <div class="features">
+                <div class="feature">
+                    <img src="../images/qulified doctor.png"alt="Qualified Doctors">
+                    <p>Qualified Doctors</p>
+                </div>
+                <div class="feature">
+                    <img src="../images/emergency.png" alt="Emergency Services">
+                    <p>Emergency Services</p>
+                </div>
+                <div class="feature">
+                    <img src="../images/accuracy testing.jpeg"alt="Accurate Testing">
+                    <p>Accurate Testing</p>
+                </div>
+                <div class="feature">
+                    <img src="../images/amblance.jpeg" alt="Free Ambulance">
+                    <p>Free Ambulance</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+/* styles.css */
+
+/* Basic reset */
+body, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Full-page layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    background-image:"../image/doctor1.jpg";
+}
+
+/* Container styling */
+#result-container {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading styling */
+#result-container h2 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+#predicted-salary {
+    font-size: 1.5em;
+    color: #007bff;
+}
